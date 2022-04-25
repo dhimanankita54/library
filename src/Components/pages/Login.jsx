@@ -24,11 +24,11 @@ export const Login = () => {
     e.preventDefault();
     handleLogin(email, password);
   };
-  useEffect(() => {
-    if (token) {
-      navigate(from, { replace: true });
-    }
-  }, [token]);
+  // useEffect(() => {
+  //   if (token) {
+  //     navigate(from, { replace: true });
+  //   }
+  // }, [token]);
   return (
     <>
       <Form onSubmit={handleSubmit}>
